@@ -29,20 +29,13 @@ body{
     width: 1170px;
 }
 
-#wrapper{
-    
-    width: 100%;
-    /* height:800px; */
-    height: 100%;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-}
 
         /*====================왼쪽 메뉴 부분(content-1)==============*/
 
+
+
 #content-1{
-    width: 25%; /* <-고정 */
+    width: 25%;
     background-color:#fefeff;
     font-family: 'Noto Sans KR', sans-serif;
     /* display: flex; */
@@ -74,8 +67,6 @@ body{
     background-color: #fdfdfd;
     border: 1px solid #6d6d6d;
     color: #6d6d6d;
-    
-    
 
 }
 
@@ -103,10 +94,7 @@ body{
 #content-1 .mplist1 .tree a.projectlink {
     padding-top: 80px;
 }
-.mplist1 > li:first-child {
-    color: #7d1cd8;
-    font-weight: bolder;
-}
+
 
 .tree li {
     list-style-type: none;
@@ -161,11 +149,29 @@ body{
     padding-left: 10px;
     font-size: 13px;
 }
+.project3{ 
+    color: #7D1CD8;
+    font-weight: 700;
+    
+
+}
 
         /* ==================== 오른쪽 (내용) 부분(content-2)================== */
 
+    #wrapper{
+    width: 100%;
+    /* height:800px; */
+    height: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .content-2{
-    width: 75%;     /* <-고정 */
+    display: flex;
+    flex-direction: column; 
+    width: 75%;
+    /* font-family: 'Inter', sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
     /* background-color: rgb(238, 213, 213); */
 }
@@ -188,169 +194,103 @@ body{
     box-shadow: 0 8px 2px #f0f0f0;
     margin-bottom: 20px;
 }
-#edittitle-1{
-    margin-top:50px;
-    margin-left:30px;
-}
-#profile_img{
-    transform:translateX(50%);
-    /* left:50%; */
-}
-#profile_img img{
-    width: 75px;}
 
-#changepicture,#deletepicture{
+#projectlist_menucontainer{
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    /* flex-direction: column;  */
-    margin-left: 443px;
-    margin-top: 10px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    border: 1px solid #6d6d6d; 
-    font-size: 12px;
-    width: 70px;
-    height: 25px;
-    text-align: center; 
-    font-family: 'Noto Sans KR', sans-serif;
-}
+    float: left;
 
-#edittitle-2{
-    margin-left: 30px;
-}
-
-#edittitle-1,#edittitle-2,#edittitle-3{
-    font-size: 15px;    
-    color: #6d6d6d;
-    font-weight: 600;
-}
-
-.profile_password{
-    transform:translateX(35%);
-    font-size:13px;
-    color:#616060;
-    margin-top: 20px;
-}
-.password-container {
-    display: flex;
-    align-items: center;
-    width: 500px;
-    margin-bottom: 20px;
-    /* background-color: #EADBF9; */
-}
-.password-input{
-    font-size: 11px;
-    height: 16px;
-    color: #616060;
-    background-color: #F8F8F8;
-}
-
-.password-info {
-    display: flex;
-    align-items: center;
-}
-
-.password-input {
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin-left: -95px;
-    /* width: 100%; */
-    width: 180px;
-}
-#password-description{
-    font-size: 13px;
-    width: 200px;
-}
-
-.toggle-password {
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.toggle-password img {
-    margin-top: 5px;
-    width: 30px; 
-    height: 30px; 
-}
-#edittitle-3{
-    margin-left:30px;
-}
-.nickname-container {
-    color: #6d6d6d;
-    transform:translateX(35%);
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    font-size: 13px;
-    margin-top: 20px;
-}
-
-#current_nickname {
-    margin-right: 50px;
-}
-
-#real_nickname {
-    color: rgb(36, 36, 36);
-    font-weight: 600;
-    font-size: 14px
-}
-
-#change_nickname {
-    color: #6d6d6d;
-    transform:translateX(35%);
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-}
-
-#new_nickname_input {
-    margin-right: 20px;
-    margin-left:30px;
-    height: 14.5px;
-    /* padding: 5px; */
-    width: 178px;
-    font-size:11px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    background-color: #F8F8F8;
-    /* width: 100%; */
-}
-
-#savebutton-2 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    border-radius: 8px;
-    background-color: #EDE9FE;
-    border: 1px solid #7D1CD8; 
-    font-size: 11px;
-    font-weight: 600;
-    width: 45px;
-    height: 25px;
-    text-align: center; 
-    color: #7D1CD8;
-    font-family: 'Noto Sans KR', sans-serif;
     
 }
-#savebutton-1{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    border-radius: 8px;
-    background-color: #EDE9FE;
-    border: 1px solid #7D1CD8; 
-    font-size: 11px;
-    font-weight: 600;
-    width: 45px;
-    height: 25px;
-    text-align: center; 
-    color: #7D1CD8;
-    margin-left: 10px;
-    padding-bottom: 3px;
-    font-family: 'Noto Sans KR', sans-serif;
+.lm-1,.lm-2,.lm-3,.lm-4{
+
+    margin-left: 30px;
+    margin-top:10px;
+    /* display: flex; */
+    padding-left: 70px;
+    font-size: 15px;
+    font-weight: medium;
 }
+.lm-3{
+    text-decoration: underline;
+    text-decoration-color: #7D1CD8;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+#pjminilist{
+    display: flex;
+    float: left;
+    font-size:13px;
+    
+}
+.mini-1{
+    padding-left:90px;  
+
+    }
+
+
+
+.mini-1,.mini-2{
+    margin-top:30px;
+    margin-left: 10px;
+}
+#project_empty_container{
+    /* background-color: #e7a3a3; */
+    width: 100%;
+    height: 50%;
+    /* position: fixed; */
+    justify-content: center;
+    
+}
+.emptyboximage{
+    width: 383px;
+    height: 308px;
+
+
+}
+.emptytext{
+    width: 487px;
+    height: 111;
+    font-size: 30px;
+    font-weight: 600;
+    color:#d9d9d9;
+    /* background-color: #ffffff; */
+    text-align: center;
+
+
+}
+.gotobuybutton{
+    width: 160px;
+    height: 38px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #7D1CD8;
+    color: #EDE9FE;
+    font-weight: 600;
+    /* padding: auto; */
+    border: none;
+
+}
+.emptyboximage,.emptytext,.gotobuybutton{
+    display: block;
+    margin: 0 auto;
+    margin-top:30px;
+
+
+
+    
+
+
+}
+    
+
+
+
+
+
+
+
+
 
 
 
@@ -376,8 +316,6 @@ body{
     margin-left: 15px;
     width: 30px;
     height: 25px;
-    
-    /* background-color: #7D1CD8; */
     
 }
 
@@ -416,8 +354,7 @@ body{
 }
 
 .cartbar:hover .category-box,
-.cartbar:hover .category-box:hover 
-{
+.cartbar:hover .category-box:hover {
     max-height: 300px;
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MYP_editprofile.css">
+    <link rel="stylesheet" href="MYP_projectlist_4.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>header and footer</title>
@@ -59,13 +59,12 @@
                 <ul class="mplist1">
                     <li><a href="/mypage(done)/mypage_editprofile.html">내 정보 수정</a></li>
                     <li>나의 배송지</li>
-
                     <ul class="tree">
                         <a class="projectlink">프로젝트</a>
-                            <li><a href="/mypage(done)/mypage_projectlist_1_ing.html">후원한 프로젝트</a></li>
-                            <li><a href="/mypage(done)/mypage_projectlist_2_no.html">찜한 프로젝트</a></li>
-                            <li><a href="/mypage(done)/mypage_projectlist_3_no.html">등록한 프로젝트</a></li>
-                            <li><a href="/mypage(done)/mypage_projectlist_4.html">최근 본 프로젝트</a></li>
+                        <li><a href="/mypage(done)/mypage_projectlist_1_ing.html">후원한 프로젝트</a></li>
+                        <li ><a href="/mypage(done)/mypage_projectlist_2_no.html">찜한 프로젝트</a></li>
+                        <li ><a href="/mypage(done)/mypage_projectlist_3_no.html">등록한 프로젝트</a></li>
+                        <li class="project4"><a href="/mypage(done)/mypage_projectlist_4.html">최근 본 프로젝트</a></li>
                     </ul>
                     <ul class="mypageunder">
                         <li>결제 내역</li>
@@ -83,61 +82,38 @@
             </div>
             <div class="content-2">
                 <div id="edittitle">
-                    <span class="highlight-text">내 정보 수정</span>
+                    <span class="highlight-text">프로젝트</span>
                 </div>
                 <div id="under_line"></div>
-                <div id="edittitle-1">프로필 사진</div>
-                <div id="profile_img"><img src="/resources/icon/basicpic.png" alt=""></div>
-                <button type="submit" id="changepicture" >변경하기</button>
-                <button type="submit" id="deletepicture" >삭제하기</button>
-                <div id="edittitle-2">비밀번호 변경</div>
-                <div class="profile_password">
-                    <div class="password-container">
-                        <div class="password-info">
-                            <span id="password-description">현재 비밀번호 </span>
-                            <input type="password" class="password-input" id="password-input" placeholder="  비밀번호 입력">
-                            <span class="toggle-password" onclick="togglePasswordVisibility('password-input')">
-                                <img src="/resources/icon/show.png" alt="eye-open-icon">
-                            </span>
-                        </div>
-                    </div>
-                
-                    <div class="password-container">
-                        <div class="password-info">
-                            <span id="password-description">변경할 비밀번호</span>
-                            <input type="password" class="password-input" id="new-password-input" placeholder="  변경할 비밀번호 입력">
-                            <span class="toggle-password" onclick="togglePasswordVisibility('new-password-input')">
-                                <img src="/resources/icon/show.png" alt="eye-open-icon">
-                            </span>
-                        </div>
-                    </div>
-                
-                    <div class="password-container">
-                        <div class="password-info">
-                            <span id="password-description">비밀번호 확인</span>
-                            <input type="password" class="password-input" id="confirm-password-input" placeholder="  한번 더 비밀번호 입력">
-                            <span class="toggle-password" onclick="togglePasswordVisibility('confirm-password-input')">
-                                <img src="/resources/icon/show.png" alt="eye-open-icon">
-                            </span>
-                            
-                        </div>
-                        <button type="submit" id="savebutton-1">저장</button>
-                    </div>
+                <div id="projectlist_menucontainer">
+                    <div class="lm-1">후원한 프로젝트</div>
+                    <div class="lm-2">찜한 프로젝트</div>
+                    <div class="lm-3">등록한 프로젝트</div>
+                    <div class="lm-4">최근 본 프로젝트</div>
                 </div>
-                <div id="edittitle-3">닉네임 변경</div>
-                <div class="nickname-container">
-                    <div id="current_nickname">현재 닉네임</div>
-                    <div id="real_nickname">체리토끼</div>
-                </div>
-                <div id="change_nickname">
-                    <div id="change_nickname_label">변경할 닉네임</div>
-                    <input type="text" id="new_nickname_input" placeholder="  새로운 닉네임 입력">
-                    <button type="submit" id="savebutton-2">저장</button>
-                </div>
+                <div id="pjminilist">
+                    <div class="mini-1">&nbsp&nbsp&nbsp</div>
 
-                
-                
+                </div>
+                <div id="supported_project1_container">
+                    <div class="spthumbnail"></div>
+                    <div id="spcontainer_1">
+                        <div class="sp1_1"> 인형 | 워뇨뇽 </div>
+                        <div class="sp1_2"> [IVE] [장원영] 비주얼 천재만재 핑크공주 워뇨인형 </div>
+                        <div class="sp1_3"> 
+                            <div class="sp1_3_1">98%</div>
+                            <div class="sp1_3_2">1,831,000원</div>
+                            <div class="sp1_3_3"> 2일 남음</div>
+                        </div>                            
 
+                    </div>
+                    <div id="spcontainer_2">
+                        <button type="button" id="detail_button">상세보기</button>
+
+                    </div>
+
+                </div>
+            
 
             </div>
         </div>
